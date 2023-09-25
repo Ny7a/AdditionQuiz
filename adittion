@@ -1,0 +1,39 @@
+package inflation.calculator;
+
+import static java.lang.System.console;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nya
+ */
+public class InflationCalculator {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    Scanner input = new Scanner(System.in);
+
+        System.out.println("\nEnter the current cost of the item: ");
+        int amount = input.nextInt();
+    System.out.println("Enter the expected rate of inflation per year: ");
+        int rate = input.nextInt();
+
+        System.out.println("Enter the number of years: ");
+//= (     int years = int;
+        int years = input.nextInt();
+        
+// At 6 % inflation per year, the cost in 10 years will be 1,790.85
+// make an int total to add the year, amount and rate together
+int total = amount * rate +1 * years;
+//public static double power(int rate, int years);
+//console.log(Math.pow(rate, rate));
+//int total = amount *   rate ^ years;
+//rate ** years;
+System.out.println("At " + rate + "% inflation per year, the cost in " +  years + " years will be " + "$" + total );
+// amount * rate * 1 +1 ^years;
+    }
+    
+}
